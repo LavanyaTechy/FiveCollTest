@@ -1,0 +1,13 @@
+@(message: String)
+
+@main("Request Hit") {
+
+@(message)
+<form action="/api/hit" method="POST">
+
+    <input type="text" name="userId" />
+    <input type="hidden" name="action" value="/api/hit" />
+    <input type="submit" value="Hit">
+</form>
+
+}
